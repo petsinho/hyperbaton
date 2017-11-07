@@ -13,7 +13,7 @@ http.createServer(function (req, res) {
     });
   } else if (req.url.indexOf('/js') != -1) {
     var filePath = req.url.split('/js')[1];
-    fs.readFile(__dirname + '/public/js' + filePath, function (err, data) {
+    fs.readFile(__dirname + '/src/js' + filePath, function (err, data) {
       if (err) console.log(err);
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
