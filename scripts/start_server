@@ -1,6 +1,8 @@
 #!/bin/bash
 cd /home/ec2-user/node-website
-export PORT=80
+export PORT=3666
+echo "what lives here"
+ls -la
 # forever start app.js
 npm i
 npm run build
