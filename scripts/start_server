@@ -4,6 +4,5 @@ export PORT=3666
 echo "what lives here"
 ls -la
 # forever start app.js
-npm i
-npm run build
+# npm run build
 npm start

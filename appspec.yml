@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /app.js
+  - source: /public/index.js
     destination: /home/ec2-user/node-website
   - source: /package.json
     destination: /home/ec2-user/node-website
@@ -9,7 +9,7 @@ files:
     destination: /home/ec2-user/node-website/public
 hooks:
   AfterInstall:
-    - location: scripts/install_dependencies
+    - location: scripts/install_dependencies2
       timeout: 300
       runas: root
     - location: scripts/start_server

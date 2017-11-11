@@ -7,13 +7,22 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb-base": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0"
   },
   "scripts": {
     "start": "PORT=3666 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "stop" : "pkill -9 hyperbaton"
+    "stop": "pkill -9 hyperbaton"
   }
 }
