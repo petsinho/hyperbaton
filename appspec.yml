@@ -7,6 +7,8 @@ files:
     destination: /home/ec2-user/node-website
   - source: /public/
     destination: /home/ec2-user/node-website/public
+   - source: /build/
+    destination: /home/ec2-user/node-website/build
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies2
@@ -15,7 +17,7 @@ hooks:
     - location: scripts/start_server
       timeout: 300
       runas: root
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 300
-      runas: root
+  # ApplicationStop:
+  #   - location: scripts/stop_server
+  #     timeout: 300
+  #     runas: root
